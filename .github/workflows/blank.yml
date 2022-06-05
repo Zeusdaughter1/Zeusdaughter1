@@ -1,36 +1,19 @@
-# This is a basic workflow to help you get started with Actions
+7da527392e2cf1762d6c71e4d82f6b545b3275619caae2bf131ee44f8a172324  mycontroller-gateway-master-linux-386.tar.gz
+0d9021b648c8baf28d4b2fd2c14c7808822384eba3659c26215717298d4e7050  mycontroller-gateway-master-linux-amd64.tar.gz
+7ef26344e4781b97803258ae33ba12d7d96123675a7416bb9dc2043178bfe1f3  mycontroller-gateway-master-linux-arm.tar.gz
+03f8859b2b50ee1004c7cbac3c15290696d193fb8177869ab138b274ff1aea7a  mycontroller-gateway-master-linux-arm64.tar.gz
+d1efb07bf4f7e493a8d65dc9f332e0ac3d7f45081df62b62944d58fadb7e8fdf  mycontroller-handler-master-linux-386.tar.gz
+007d069df597801631c5c20cecb389b46fcf42487ffbba41fae1dc5318a77113  mycontroller-handler-master-linux-amd64.tar.gz
+610991678af8f1d9b636073f853f32e3654ab65db158df46fd91693624cec2bb  mycontroller-handler-master-linux-arm.tar.gz
+8030756d72cd4bc98935e23d4b6b46ebdf87c0c10008203393fa90a9bbe69c89  mycontroller-handler-master-linux-arm64.tar.gz
+fdcdff9c1f24e519c888b743bd88b2923a34157cc9271f4b7825dd3608ebb607  mycontroller-server-master-linux-386.tar.gz
+476ddb905eb3bbcc109f30133983659ec8da3bc27c9533d4bbbc466e02735637  mycontroller-server-master-linux-amd64.tar.gz
+dcb45225a9b4f7314b9253118cee5c2acc7a0e705de938ad7c2ebe56616e6135  mycontroller-server-master-linux-arm.tar.gz
+df44aaedde3a2c6fa58cd3f799f1164a64446dd82374b662619e9d42065bff4f  mycontroller-server-master-linux-arm64.tar.gz
+c1790d90b914a9d424bab9a7f4c787275843a2ce19be992626793885b8fbfe2a  mycontroller-gateway-master-windows-386.zip
+2fa6ef73651d7d33ee13e99f0646f516a10aecb3e2fe0a1644b76ceb651c6b72  mycontroller-gateway-master-windows-amd64.zip
+ea3df73cbb16e4fcd9c75c34a2e882afa584eb8a7258af242415f0287d199116  mycontroller-handler-master-windows-386.zip
+3b87d5f4f2256353840d87027f46185a59be8571f4fdd3bdc951855c508f1d4f  mycontroller-handler-master-windows-amd64.zip
+aeb4db43a1528699b841d0044953543ba22572c5343a6b321f9c87cdc20d0883  mycontroller-server-master-windows-386.zip
+908b7f20b4b4e3b49d1209904c62059041e65f97920db62c47aec7728572d815  mycontroller-server-master-windows-amd64.zip
 
-name: CI
-
-# Controls when the workflow will run
-on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
-
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
